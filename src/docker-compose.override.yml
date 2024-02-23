@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  tracker.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+    ports:
+      - "8080"
+
+  tracker.db:
+    environment:
+      MARIADB_ROOT_PASSWORD: tracker_root
+      MARIADB_PASSWORD: tracker_dev
+    ports:
+      - 3306:3306

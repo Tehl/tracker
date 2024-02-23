@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  tracker.api:
+    image: ${DOCKER_REGISTRY-}trackerapi
+    build:
+      context: .
+      dockerfile: Tracker.Api/Dockerfile
+    depends_on:
+      tracker.db:
+        condition: service_healthy
+
+  tracker.db:
+    image: mariadb
+    environment:
+      MARIADB_DATABASE: tracker
+      MARIADB_USER: tracker
+    healthcheck:
+      test: ["CMD-SHELL", "healthcheck.sh --connect --innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
