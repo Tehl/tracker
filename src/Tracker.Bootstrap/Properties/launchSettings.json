@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Tracker.Bootstrap": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

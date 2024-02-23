@@ -8,6 +8,10 @@ services:
     ports:
       - "8080"
 
+  tracker.bootstrap:
+    environment:
+      DOTNET_ENVIRONMENT: Development
+
   tracker.db:
     environment:
       MARIADB_ROOT_PASSWORD: tracker_root

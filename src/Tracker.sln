@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracker.Api", "Tracker.Api\
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{08FB392C-E8A2-4990-9390-FB6459CF8DE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracker.Domain", "Tracker.Domain\Tracker.Domain.csproj", "{FA794E5F-DA46-4EAD-A436-CD2AA318B7F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracker.Bootstrap", "Tracker.Bootstrap\Tracker.Bootstrap.csproj", "{C07ABA0C-E5A4-4D44-BD4F-31F23CFCDDD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{08FB392C-E8A2-4990-9390-FB6459CF8DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08FB392C-E8A2-4990-9390-FB6459CF8DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08FB392C-E8A2-4990-9390-FB6459CF8DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA794E5F-DA46-4EAD-A436-CD2AA318B7F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA794E5F-DA46-4EAD-A436-CD2AA318B7F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA794E5F-DA46-4EAD-A436-CD2AA318B7F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA794E5F-DA46-4EAD-A436-CD2AA318B7F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C07ABA0C-E5A4-4D44-BD4F-31F23CFCDDD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C07ABA0C-E5A4-4D44-BD4F-31F23CFCDDD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C07ABA0C-E5A4-4D44-BD4F-31F23CFCDDD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C07ABA0C-E5A4-4D44-BD4F-31F23CFCDDD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

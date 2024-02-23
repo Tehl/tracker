@@ -10,6 +10,15 @@ services:
       tracker.db:
         condition: service_healthy
 
+  tracker.bootstrap:
+    image: ${DOCKER_REGISTRY-}trackerbootstrap
+    build:
+      context: .
+      dockerfile: Tracker.Bootstrap/Dockerfile
+    depends_on:
+      tracker.db:
+        condition: service_healthy
+
   tracker.db:
     image: mariadb
     environment:
